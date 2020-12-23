@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SZUTEST OSGB</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="noValid">Kapsam Dışı</string>
+    <string name="comment">Açıklama</string>
+
+    <string name="pcr">PCR</string>
+    <string name="anticor">Antikor</string>
+    <string name="pcr_anticor">PCR / Antikor</string>
+
+
+    <string name="search_company">Aradığınız firmanın ismini giriniz.</string>
+    <string name="conn_err">Hata oluştu. Bağlantınızı kontrol edin.</string>
+    <string name="inp_err">Tüm alanları doğru doldurduğunuzdan emin olun.</string>
+    <string name="not_found_file">Daha önce kaydedilmiş formunuz bulunmamaktadır .</string>
+    <string name="not_found_pcr">PCR testiniz bulunmamaktadır .</string>
+
+    <string name="drawerHome">Ana Menü</string>
+    <string name="drawerLogout">Çıkış</string>
+    <string name="drawerPCR">PCR Ekle</string>
+
+    <string name="login">Giriş</string>
+    <string name="registerLink">Kayıt Ol</string>
+    <string name="userNameField">Kullanıcı Adınız</string>
+    <string name="passwordField">Şifreniz</string>
+    <string name="passwordFieldAgain">Şifrenizi tekrar girin</string>
+    <string name="mailField">Mail Adresiniz</string>
+    <string name="haveAlreadyAccount">Hesabım Var</string>
+    <string name="buildAccount">Önce bir hesap oluşturmalısın veya olan hesabın ile giriş yapmalısın.</string>
+
+    <string name="checkCredentials">Boş alan bıraktınız!</string>
+    <string name="pcr_err">Antikor / PCR alanı boş kalmamalı!</string>
+    <string name="identity_number_err">T.C. / Passport alanı 9 veya 11 haneden oluşmalıdır!</string>
+    <string name="phone_number_err">Telefon Numarası 11 haneden oluşmalıdır!</string>
+</resources>

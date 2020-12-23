@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="pcr"
+            type="com.onurkanbakirci.szutestosgb.data.db.entities.PCR" />
+
+        <variable
+            name="pcrFragmentViewModel"
+            type="com.onurkanbakirci.szutestosgb.ui.fragments.PCRViewModel" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginVertical="@dimen/inp_vertical"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/shadow_effect"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/title"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:maxLines="1"
+                android:text="@{pcr.title}"
+                />
+            <Button
+                android:onClick="@{(view)->pcrFragmentViewModel.deletePcr(view,pcr)}"
+                android:background="@drawable/ic_delete"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/date"
+                android:textColor="@color/green"
+                android:ellipsize="end"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@{pcr.date}"
+            />
+            <TextView
+                android:id="@+id/name"
+                android:textColor="@color/green"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@{pcr.userName}"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
+

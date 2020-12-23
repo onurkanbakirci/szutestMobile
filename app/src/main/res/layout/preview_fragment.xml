@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/finishFormBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="@dimen/inp_horizontal"
+        android:layout_marginVertical="@dimen/inp_vertical"
+        android:src="@drawable/ic_check"
+        android:backgroundTint="@color/white"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cancelForm"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/inp_horizontal"
+        android:layout_marginVertical="@dimen/inp_vertical"
+        android:src="@drawable/ic_close"
+        android:backgroundTint="@color/colorAccent"
+        />
+</RelativeLayout>

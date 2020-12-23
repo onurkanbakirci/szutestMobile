@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable
+            name="categoryFragmentViewModel"
+            type="com.onurkanbakirci.szutestosgb.ui.fragments.CategoryFragmentViewModel" />
+    </data>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputs_of_category_recycleview"
+            />
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="@{categoryFragmentViewModel.progressOfCategory}"
+            />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:onClick="@{categoryFragmentViewModel::finishForm}"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/inp_horizontal"
+            android:layout_marginVertical="@dimen/inp_vertical"
+            android:src="@drawable/ic_close"
+            android:backgroundTint="@color/colorAccent"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:onClick="@{(view)->categoryFragmentViewModel.goBtnToQuestions(view)}"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="@dimen/inp_horizontal"
+            android:layout_marginVertical="@dimen/inp_vertical"
+            android:src="@drawable/ic_send"
+            android:backgroundTint="@color/green"
+            />
+    </RelativeLayout>
+    </RelativeLayout>
+</layout>

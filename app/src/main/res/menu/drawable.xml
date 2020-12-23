@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:title="@string/drawerHome"
+            android:icon="@drawable/ic_home"
+            android:id="@+id/drawerHome"
+            />
+        <item
+            android:title="@string/drawerPCR"
+            android:icon="@drawable/ic_fingerprint"
+            android:id="@+id/addPCR"
+            />
+        <item
+            android:title="@string/drawerLogout"
+            android:icon="@drawable/ic_exit"
+            android:id="@+id/drawerLogout"
+            />
+    </group>
+
+</menu>

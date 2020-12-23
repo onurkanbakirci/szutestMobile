@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable
+            name="category"
+            type="com.onurkanbakirci.szutestosgb.data.db.entities.Category" />
+        <variable
+            name="categoryFragmentViewModel"
+            type="com.onurkanbakirci.szutestosgb.ui.fragments.CategoryFragmentViewModel" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="52dp"
+        >
+        <CheckBox
+            android:id="@+id/checkBoxFroCat"
+            android:buttonTint="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@{category.name}"
+            android:onClick="@{(view)->categoryFragmentViewModel.status(view,category)}"
+            />
+        <include layout="@layout/include_row_separator" />
+    </LinearLayout>
+</layout>
